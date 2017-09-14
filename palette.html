@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王施雨画板</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/iconfont.css">
+</head>
+<body>
+    <div class="palette">
+        <div class="function">
+            <label for="" class="iconfont icon-chexiao">
+                <div class="ti">撤销</div>
+                <div class="san"></div>
+            </label>
+            <label for="" class="iconfont icon-xiangpi">
+                <div class="ti">橡皮</div>
+                <div class="san"></div>
+            </label>
+            <label for="" class="iconfont icon-jianqie">
+                <div class="ti">剪切</div>
+                <div class="san"></div>
+            </label>
+            <label for="" class="iconfont icon-xinjian">
+                <div class="ti">新建</div>
+                <div class="san"></div>
+            </label>
+            <label for="" class="iconfont icon-baocun">
+                <div class="ti">保存</div>
+                <div class="san"></div>
+            </label>
+            <label for="" class="iconfont icon-xiazai">
+                <div class="ti">下载</div>
+                <div class="san"></div>
+            </label>
+        </div>
+
+        <div class="draw">
+            <div class="tool">
+                <label for="" class="iconfont icon-xiantiao">
+                    <div class="ti">直线</div>
+                    <div class="san"></div>
+                </label>
+                <label for="" class="iconfont icon-xuxian">
+                    <div class="ti">虚线</div>
+                    <div class="san"></div>
+                </label>
+                <label for="" class="iconfont icon-qianbi">
+                    <div class="ti">铅笔</div>
+                    <div class="san"></div>
+                </label>
+                <label for="" class="iconfont icon-yuan">
+                    <div class="ti">圆</div>
+                    <div class="san"></div>
+                </label>
+                <label for="" class="iconfont icon-juxing">
+                    <div class="ti">矩形</div>
+                    <div class="san"></div>
+                </label>
+                <label for="" class="iconfont icon-yuanjiaojuxing">
+                    <div class="ti" id="sp">圆角矩形</div>
+                    <div class="san"></div>
+                </label>
+                <label for="" class="iconfont icon-duobianxing">
+                    <div class="ti">多边形</div>
+                    <div class="san"></div>
+                </label>
+                <label for="" class="iconfont icon-wujiaoxing">
+                    <div class="ti">多角形</div>
+                    <div class="san"></div>
+                </label>
+                <label for="" class="iconfont icon-wenzi">
+                    <div class="ti">文字</div>
+                    <div class="san"></div>
+                </label>
+                <label for="" class="iconfont icon-tianchong">
+                    <div class="ti">填充</div>
+                    <div class="san"></div>
+                </label>
+                    <input type="color" value="#aaff00" class="fillIn">
+                <label for="" class="iconfont icon-miaobian">
+                    <div class="ti">描边</div>
+                    <div class="san"></div>
+                </label>
+                <input type="color" value="#ff2500" class="strokeIn">
+            </div>
+            <div class="screen">
+                <div class="mask"></div>
+                <div class="clip"></div>
+                <div class="eraser"></div>
+                <canvas width="800" height="800"></canvas>
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="JS/palette.js"></script>
+<script src="JS/index.js"></script>
+

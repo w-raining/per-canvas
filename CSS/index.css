@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style:none;
+}
+html,body{
+    width: 100%;
+    height:100%;
+    background: url("../img/6.jpg") center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+.palette{
+    padding-left: 200px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background: rgba(255,255,255,0.1);
+}
+.palette>.function{
+    width: 80px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    float: left;
+    padding: 150px 20px;
+    box-sizing: border-box;
+}
+.palette>.function>label{
+    width: 40px;
+    height:40px;
+    padding-left: 5px;
+    line-height: 50px;
+    font-size: 30px;
+    color: #1A4F5A;
+    cursor: pointer;
+}
+.palette>.draw{
+    height:100%;
+    margin-left: 80px;
+}
+.palette>.draw>.tool{
+    padding-left: 50px;
+    width: 100%;
+    height:140px;
+    background: rgba(243,221,207,0.3);
+}
+.palette>.draw>.tool>label{
+    text-align: center;
+    line-height: 200px;
+    padding-right: 10px;
+    font-size: 30px;
+    color: #1A4F5A;
+    cursor: pointer;
+}
+.palette>.draw>.tool>label>input{
+    border:0;
+}
+.palette>.draw>.screen{
+    position: relative;
+}
+.palette>.draw>.screen>canvas{
+    background:rgba(255,255,255,0.7);
+}
+.mask{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    z-index:200;
+}
+.eraser{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    border: 1px solid #fff;
+}
+.clip{
+    display: none;
+    position: absolute;
+    border: 2px dashed #1B394F;
+}
+label{
+    position: relative;
+}
+.palette>.function>label .ti{
+     width: 50px;
+     height: 26px;
+     background: rgba(255,255,255,.5);
+     font-size: 14px;
+     line-height: 26px;
+     text-align: center;
+     position: absolute;
+     top:0;
+     left: -80px;
+     bottom: 0;
+     margin: auto;
+     opacity: 0;
+     transition: all 0.6s ease;
+ }
+.palette>.function>label .san{
+    width: 0;
+    height:0;
+    border-top: 7px solid rgba(255,255,255,0);
+    border-left: 7px solid rgba(255,255,255,.5);
+    border-bottom: 7px solid rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    left: -30px;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: 0.6s all ease;
+}
+.palette>.function>label:hover .ti{
+    opacity: 1;
+    transform: translateX(20px);
+}
+.palette>.function>label:hover .san{
+    opacity: 1;
+    transform: translateX(20px);
+}
+.palette>.draw>.tool>label .ti{
+    width: auto;
+    height: 26px;
+    background: rgba(255,255,255,.5);
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    position: absolute;
+    top:-64px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.palette>.draw>.tool>label .san{
+    width: 0;
+    height:0;
+    border-top: 7px solid rgba(255,255,255,.5);
+    border-left: 7px solid rgba(255,255,255,0);
+    border-right: 7px solid rgba(255,255,255,0);
+    position: absolute;
+    top:-38px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition: 0.6s all ease;
+}
+.palette>.draw>.tool>label:hover .ti{
+    opacity: 1;
+    transform: translateY(20px);
+}
+.palette>.draw>.tool>label:hover .san{
+    opacity: 1;
+    transform: translateY(20px);
+}
+#sp{
+    width: 70px;
+}
